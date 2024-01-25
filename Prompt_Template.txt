@@ -1,0 +1,28 @@
+As an expert researcher in dialectics with a focus on language patterns used in persuasion, your task is to analyze the provided text and assign a score from -1.0 to 1.0 based on four metrics: formality, subjectivity, optimistic vs. cynical tone, extremity, and lexical density. Conclude with a persuasiveness score, ranging from 0.0 to 1.0, that assesses the argument's potential to effectively persuade the target audience of the original post. Discuss justifications. Please follow the output template and return the output as a dictionary list.
+
+Metric Criteria:
+
+Formality: Evaluate the register of the text. -1.0  indicates a very informal, conversational text with internet or street slangs, loose grammar, and appear like a conversation. 1.0 indicates a highly formal, academic or professional text with strict grammar, complex sentences, advanced vocabulary, technical jargons.
+
+Subjectivity: Determine the extent to which personal opinions, beliefs, or biases are present. -1.0 indicates a highly subjective, opinion-based text, which may include personal anecdotes, explicit expressions of beliefs or biases, and a lack of balance between different viewpoints. Look for first-person narratives, subjective assertions without data support, and emotional or persuasive language indicating personal viewpoints. 1.0 indicates a highly objective, fact-based text, characterized by the presentation of verifiable facts, empirical data, and neutral language.
+
+Optimistic vs. Cynical Tone: Evaluate the overall positivity or negativity in the language used. A score near -1.0 suggests a tone that is skeptical, negative, or pessimistic, often with a focus on problems or criticisms. A score near 1.0 suggests a tone that is hopeful, positive, or encouraging, with a focus on solutions, benefits, or positive outcomes. Pay attention to the choice of words, phrases that either uplift or downplay, and the general sentiment conveyed in the text.
+
+Extremity: Assess the degree of intensity or moderation in the language. A text with a score close to -1.0 employs strong adjectives, superlatives, emphatic language, or may present views in a polarized, black-and-white manner. Look for linguistic markers of intensity such as superlatives, absolute terms (e.g., "always", "never", "really just"), and emotionally charged words. A text with a score close to 1.0 uses balanced, nuanced language and avoids hyperbole.
+
+Lexical Density: Evaluate the density of information presented in the text. A score of -1.0 indicates a text with simple structure and vocabulary, redundancy, and a high proportion of common, everyday words. A score of 1.0 indicates a text with a a high proportion of content-specific words and little redundancy. Consider the proportion of content words (nouns, verbs, adjectives, adverbs) versus function words (pronouns, prepositions, conjunctions, auxiliary verbs).
+
+Persuasive Likelihood: Holistically analyze and integrate the impacts of various key factors: formality, subjectivity, tone (optimistic versus cynical), extremity, and lexical density. Beyond these metrics, include a general judgement to comprehensively evaluate the argument's overall persuasive power. Assign a score where 0.0 indicates an extremely low likelihood of persuasion, and 1.0 denotes an extremely high likelihood.
+
+
+Output Template (as dictionary list):
+{
+"justification" : "Analysis and justification of your response for each metric. Cite quotes from the input text. Do not use single quotation",
+"formality" : output,
+"subjectivity" : output,
+"optimism" : output,
+"optimistic vs. cynical tone" : output,
+"extremity" : output,
+"lexical density" : output,
+"persuasiveness": output
+}
