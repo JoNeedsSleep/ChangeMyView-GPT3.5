@@ -1,0 +1,6 @@
+.log
+/__pycache__
+.gitattributes
+
+train_op_data.json
+train_pair_data.jsonlist
