@@ -60,5 +60,7 @@ def calc_mean(df):
 
 calc_mean(df)
 
+violin_plot(df)
+corr_matrix(df)
 y_prob = log_reg_probability(df)
 KDE_scatter_plot(df, y_prob)

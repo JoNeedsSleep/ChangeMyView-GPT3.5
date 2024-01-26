@@ -22,6 +22,13 @@ def log_reg_probability(df):
     y_train = X_train['label']
     y_test = X_test['label']
 
+    # classification model & evaluation
+    model = LogisticRegression()
+    model.fit(X_train_features, y_train)
+    y_pred = model.predict(X_test_features)
+    print(classification_report(y_test, y_pred))
+    print(confusion_matrix(y_test, y_pred))
+
     # Model Initialization and Training
     model = LogisticRegression()
     model.fit(X_train_features, y_train)
